@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Palanivel P — Shopify Developer specializing in Liquid, theme customization, and e-commerce storefront development.">
+  <meta name="theme-color" content="#09090d">
+  <title>Palanivel P | Shopify Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#home" aria-label="Palanivel P home">P<span>.</span></a>
+    <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+    <nav class="nav-links" id="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="#contact">Let's Talk ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content">
+        <div class="availability"><span class="status-dot"></span> Open to Shopify Developer Opportunities</div>
+        <p class="eyebrow">HELLO, I'M</p>
+        <h1>Palanivel P<span class="gradient-text">.</span></h1>
+        <h2>Shopify Developer building <span class="gradient-text">better storefronts.</span></h2>
+        <p class="hero-description">I develop and customize Shopify themes using Liquid, HTML, CSS, and JavaScript, focusing on flexible storefronts, reliable functionality, and helpful theme support.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore My Work ↗</a>
+          <a class="button button-secondary" href="#contact">Contact Me</a>
+          <a class="button button-secondary" href="resume.pdf" download>Download Resume ↓</a>
+        </div>
+        <div class="hero-meta"><span>Shopify</span><span>Liquid</span><span>Frontend Development</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Decorative Shopify code illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="code-card">
+          <div class="code-card-top"><i></i><i></i><i></i><small>theme.liquid</small></div>
+          <pre><code><span class="code-purple">{% section </span><span class="code-green">"header"</span><span class="code-purple"> %}</span>
+
+<span class="code-blue">&lt;main&gt;</span>
+  <span class="code-purple">{% for </span>product<span class="code-purple"> in </span>products<span class="code-purple"> %}</span>
+    <span class="code-blue">&lt;h2&gt;</span>{{ product.title }}<span class="code-blue">&lt;/h2&gt;</span>
+  <span class="code-purple">{% endfor %}</span>
+<span class="code-blue">&lt;/main&gt;</span></code></pre>
+          <div class="code-card-footer"><span class="status-dot"></span> Crafting Shopify experiences</div>
+        </div>
+        <div class="floating-tag tag-one">Liquid + Shopify</div>
+        <div class="floating-tag tag-two">Clean code. Better UX.</div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading"><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Turning ideas into storefronts.</h2></div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>I'm a Shopify Developer focused on building, customizing, and maintaining e-commerce themes. My work includes theme components, storefront settings, testing, debugging, and assisting customers with theme-related questions.</p>
+          <p>I enjoy understanding how storefronts work and improving them through practical development and problem-solving. I'm continuing to grow my skills in Shopify and frontend development.</p>
+        </div>
+        <div class="info-card">
+          <span class="info-label">EDUCATION</span><h3>B.Sc. Physics</h3><p>PSG College of Arts and Science</p><p>Coimbatore, Tamil Nadu</p>
+          <div class="info-divider"></div>
+          <span class="info-label">COMPANY</span><h3>Webdesign Tech Private Limited</h3><p>Shopify Development</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading"><p class="eyebrow">MY TOOLKIT</p><h2>Skills &amp; technologies</h2><p>Tools and technologies used in Shopify theme development.</p></div>
+      <div class="skills-grid">
+        <div class="skill-card"><span class="skill-number">01</span>Shopify Theme Development</div>
+        <div class="skill-card"><span class="skill-number">02</span>Liquid</div>
+        <div class="skill-card"><span class="skill-number">03</span>Shopify CLI</div>
+        <div class="skill-card"><span class="skill-number">04</span>HTML5</div>
+        <div class="skill-card"><span class="skill-number">05</span>CSS3</div>
+        <div class="skill-card"><span class="skill-number">06</span>JavaScript</div>
+        <div class="skill-card"><span class="skill-number">07</span>Theme Sections &amp; Blocks</div>
+        <div class="skill-card"><span class="skill-number">08</span>Templates &amp; Snippets</div>
+        <div class="skill-card"><span class="skill-number">09</span>Git &amp; GitHub</div>
+        <div class="skill-card"><span class="skill-number">10</span>VS Code</div>
+        <div class="skill-card"><span class="skill-number">11</span>Responsive Design</div>
+        <div class="skill-card"><span class="skill-number">12</span>Theme Debugging</div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading"><p class="eyebrow">SELECTED WORK</p><h2>Shopify projects</h2><p>A selection of Shopify theme projects I've contributed to.</p></div>
+      <div class="project-filters" role="group" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all">All projects</button>
+        <button class="filter-btn" data-filter="theme-store">Theme Store</button>
+        <button class="filter-btn" data-filter="themeforest">ThemeForest</button>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card" data-category="theme-store">
+          <div class="project-preview accent-pink"><div class="preview-top"><span>PROJECT / 01</span><span>↗</span></div><div class="preview-art"><span class="preview-symbol">L</span><span class="preview-name">Lollipop-Jewel</span><span class="preview-caption">JEWELLERY STOREFRONT</span></div></div>
+          <div class="project-body"><span class="project-category">SHOPIFY THEME STORE</span><h3>Lollipop-Jewel</h3><p>Jewellery-focused Shopify storefront theme with four design presets. Contributed to development, testing, and support.</p><div class="tech-tags"><span>Shopify</span><span>Liquid</span><span>JavaScript</span></div><a class="project-link" href="https://lollipop-jewel.myshopify.com/" target="_blank" rel="noopener noreferrer">View Live Demo <span>↗</span></a></div>
+        </article>
+        <article class="project-card" data-category="theme-store">
+          <div class="project-preview accent-rose"><div class="preview-top"><span>PROJECT / 02</span><span>↗</span></div><div class="preview-art"><span class="preview-symbol">E</span><span class="preview-name">Elegance-Lipsora</span><span class="preview-caption">BEAUTY STOREFRONT</span></div></div>
+          <div class="project-body"><span class="project-category">SHOPIFY THEME STORE</span><h3>Elegance-Lipsora</h3><p>Beauty-focused Shopify storefront theme with four design presets. Contributed to development, testing, delivery, and support-related tasks.</p><div class="tech-tags"><span>Shopify</span><span>Liquid</span><span>CSS</span></div><a class="project-link" href="https://elegance-lipsora.myshopify.com/" target="_blank" rel="noopener noreferrer">View Live Demo <span>↗</span></a></div>
+        </article>
+        <article class="project-card" data-category="themeforest">
+          <div class="project-preview accent-purple"><div class="preview-top"><span>PROJECT / 03</span><span>↗</span></div><div class="preview-art"><span class="preview-symbol">K</span><span class="preview-name">Kitty Multi Purpose</span><span class="preview-caption">MULTIPURPOSE THEME</span></div></div>
+          <div class="project-body"><span class="project-category">THEMEFOREST</span><h3>Kitty Multi Purpose</h3><p>Multipurpose Shopify theme featuring seven demos for different storefront designs.</p><div class="tech-tags"><span>Shopify</span><span>Liquid</span><span>JavaScript</span></div><a class="project-link" href="https://bt-kitty.myshopify.com/" target="_blank" rel="noopener noreferrer">View Live Demo <span>↗</span></a></div>
+        </article>
+        <article class="project-card" data-category="themeforest">
+          <div class="project-preview accent-orange"><div class="preview-top"><span>PROJECT / 04</span><span>↗</span></div><div class="preview-art"><span class="preview-symbol">P</span><span class="preview-name">Primposh</span><span class="preview-caption">BEAUTY &amp; COSMETICS</span></div></div>
+          <div class="project-body"><span class="project-category">THEMEFOREST</span><h3>Primposh – Beauty Cosmetic</h3><p>Beauty and cosmetics-focused Shopify storefront theme.</p><div class="tech-tags"><span>Shopify</span><span>Liquid</span><span>CSS</span></div><a class="project-link" href="https://primposh-theme.myshopify.com/" target="_blank" rel="noopener noreferrer">View Live Demo <span>↗</span></a></div>
+        </article>
+        <article class="project-card" data-category="themeforest">
+          <div class="project-preview accent-blue"><div class="preview-top"><span>PROJECT / 05</span><span>↗</span></div><div class="preview-art"><span class="preview-symbol">G</span><span class="preview-name">Glamora</span><span class="preview-caption">SHOPIFY THEME</span></div></div>
+          <div class="project-body"><span class="project-category">THEMEFOREST</span><h3>Glamora Shopify Theme</h3><p>Shopify theme project. Add more details about its features and your contributions when confirmed.</p><div class="tech-tags"><span>Shopify</span><span>Liquid</span></div><a class="project-link" href="https://dt-glamora.myshopify.com/" target="_blank" rel="noopener noreferrer">View Live Demo <span>↗</span></a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="section-heading"><p class="eyebrow">WHAT I DO</p><h2>Development experience</h2></div>
+      <div class="experience-card">
+        <div class="experience-marker"><span></span></div>
+        <div class="experience-content"><span class="project-category">PROFESSIONAL EXPERIENCE</span><h3>Shopify Developer</h3><h4>Webdesign Tech Private Limited</h4>
+          <p>Shopify theme development, customization, testing, and theme-related technical support.</p>
+          <ul>
+            <li>Developed and customized themes using Liquid, HTML, CSS, and JavaScript.</li>
+            <li>Worked with theme sections, blocks, snippets, templates, and settings.</li>
+            <li>Contributed to Shopify Theme Store and ThemeForest projects.</li>
+            <li>Investigated theme issues and helped resolve customer configuration and customization questions with the support team.</li>
+          </ul>
+          <p class="muted">Add your exact employment dates before publishing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-heading"><p class="eyebrow">LET'S CONNECT</p><h2>Have a Shopify project in mind?</h2><p>I'm interested in Shopify Developer opportunities across Tamil Nadu and remote roles.</p></div>
+      <div class="contact-card"><div><p class="eyebrow">OPEN TO OPPORTUNITIES</p><h3>Let's build something useful.</h3><p>Reach out to discuss a role, a project, or an opportunity to work together.</p></div><a class="button button-primary" href="mailto:YOUR_EMAIL@example.com?subject=Shopify%20Developer%20Opportunity">Email Me ↗</a></div>
+      <p class="contact-note">Replace the placeholder email with your real email address. Add your LinkedIn and GitHub links before publishing.</p>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="logo" href="#home">P<span>.</span></a><p>Designed &amp; built with HTML, CSS and JavaScript.</p><a href="#home">Back to top ↑</a><span>© <span id="year"></span> Palanivel P</span></footer>
+</body>
+</html>
